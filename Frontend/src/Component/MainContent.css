@@ -1,0 +1,66 @@
+body {
+  background-color: #f3f4f6; /* Light background for a calming effect */
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+
+.main-content {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.welcome-text {
+  color: #2e7d32; /* Dark green for a natural feel */
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.chat-bubble {
+  background-color: #E6F8F1;
+  padding: 16px 28px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.typing {
+  align-items: center;
+  display: flex;
+  height: 17px;
+}
+
+.typing .dot {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+  background-color: #6CAD96;  
+  border-radius: 50%;
+  height: 7px;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.typing .dot:nth-child(1) {
+  animation-delay: 200ms;
+}
+
+.typing .dot:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.typing .dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+.typing .dot:last-child {
+  margin-right: 0;
+}
+
+
